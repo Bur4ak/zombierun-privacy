@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ZombieRun — Gizlilik Politikası / Privacy Policy</title>
+<style>
+  :root {
+    --bg: #0a0c10;
+    --bg2: #12161f;
+    --text: #e8ecf3;
+    --muted: #97a1b2;
+    --gold: #ffd24d;
+    --line: rgba(255,255,255,0.12);
+    --card: rgba(255,255,255,0.04);
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: linear-gradient(160deg, #161b2e 0%, var(--bg) 45%, #1a1024 100%);
+    background-attachment: fixed;
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 40px 22px 80px; }
+
+  header { display: flex; align-items: center; justify-content: space-between;
+           gap: 16px; flex-wrap: wrap; margin-bottom: 28px; }
+  .brand { display: flex; align-items: center; gap: 10px; }
+  .brand-mark { font-size: 30px; }
+  .brand-name { font-size: 20px; font-weight: 800; letter-spacing: -0.2px; }
+
+  .langswitch { display: flex; gap: 6px; background: var(--card);
+                border: 1px solid var(--line); border-radius: 999px; padding: 4px; }
+  .langswitch button {
+    appearance: none; border: 0; cursor: pointer; font: inherit;
+    font-size: 14px; font-weight: 700; color: var(--muted);
+    background: transparent; border-radius: 999px; padding: 7px 16px;
+    transition: background .15s ease, color .15s ease;
+  }
+  .langswitch button:hover { color: var(--text); }
+  .langswitch button[aria-pressed="true"] { background: var(--gold); color: #241a00; }
+
+  h1 { font-size: 30px; line-height: 1.25; margin: 0 0 6px; letter-spacing: -0.4px; }
+  .updated { color: var(--muted); font-size: 14px; margin: 0 0 30px; }
+
+  .summary {
+    background: var(--card); border: 1px solid var(--line);
+    border-left: 3px solid var(--gold);
+    border-radius: 14px; padding: 18px 20px; margin: 0 0 34px;
+  }
+  .summary h2 { margin: 0 0 10px; font-size: 16px; letter-spacing: 0.4px;
+                text-transform: uppercase; color: var(--gold); }
+  .summary ul { margin: 0; padding-left: 20px; }
+  .summary li { margin: 6px 0; }
+
+  h2 { font-size: 20px; margin: 34px 0 10px; letter-spacing: -0.2px; }
+  h3 { font-size: 16px; margin: 22px 0 8px; color: var(--gold); }
+  p { margin: 10px 0; }
+  ul { padding-left: 22px; }
+  li { margin: 5px 0; }
+  strong { color: #fff; }
+  a { color: #7fd4ff; }
+
+  table { width: 100%; border-collapse: collapse; margin: 14px 0 6px;
+          font-size: 15px; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line);
+           vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; font-size: 13px;
+       text-transform: uppercase; letter-spacing: 0.4px; }
+  .tablewrap { overflow-x: auto; border: 1px solid var(--line);
+               border-radius: 14px; background: var(--card); }
+
+  .note { color: var(--muted); font-size: 14px; }
+  footer { margin-top: 46px; padding-top: 20px; border-top: 1px solid var(--line);
+           color: var(--muted); font-size: 14px; }
+
+  [data-lang] { display: none; }
+  [data-lang].active { display: block; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="brand">
+      <span class="brand-mark">🧟</span>
+      <span class="brand-name">ZombieRun</span>
+    </div>
+    <div class="langswitch" role="group" aria-label="Language">
+      <button type="button" id="btn-tr" aria-pressed="true">Türkçe</button>
+      <button type="button" id="btn-en" aria-pressed="false">English</button>
+    </div>
+  </header>
+
+  <!-- ============================ TÜRKÇE ============================ -->
+  <section data-lang="tr" class="active">
+    <h1>Gizlilik Politikası</h1>
+    <p class="updated">Son güncelleme: 7 Eylül 2026</p>
+
+    <div class="summary">
+      <h2>Kısaca</h2>
+      <ul>
+        <li><strong>Koşu rotanız telefonunuzdan çıkmaz.</strong> Nereden geçtiğinizi biz görmeyiz.</li>
+        <li>Sunucuya yalnızca sıralamaya katılırsanız, yalnızca <strong>takma adınız ve koşu özetiniz</strong> gider.</li>
+        <li>Sıralamaya katılmayı <strong>istediğiniz an kapatabilirsiniz</strong>; kaydınız silinir.</li>
+        <li>Reklam yok, analitik yok, takip yok, veri satışı yok.</li>
+        <li>Hesap açmanız gerekmez. E-postanızı, adınızı, telefonunuzu istemiyoruz.</li>
+      </ul>
+    </div>
+
+    <p>
+      ZombieRun (“uygulama”), gerçek dünyada koşarak oynadığınız bir GPS oyunudur.
+      Bu politika, uygulamanın hangi verileri işlediğini, neyi cihazınızda
+      tuttuğunu ve neyi sunucuya gönderdiğini açıklar.
+    </p>
+
+    <h2>1. Konumunuz</h2>
+    <p>
+      Uygulama, oynarken <strong>hassas konum</strong> bilginize erişir. Buna izin
+      vermezseniz oyun çalışmaz, çünkü oyunun tamamı gerçek konumunuza dayanır:
+      zombiler etrafınızda belirir, sizi konumunuza göre kovalar, mesafeniz ve
+      hızınız buradan hesaplanır.
+    </p>
+    <p>
+      <strong>Konum verileriniz cihazınızdan çıkmaz.</strong> Koşu sırasında
+      çizilen rota yalnızca telefonunuzun yerel depolamasında saklanır ve yalnızca
+      size gösterilir. Bu rotayı hiçbir sunucuya yüklemiyoruz, hiçbir üçüncü tarafla
+      paylaşmıyoruz. Uygulamayı silerseniz bu veriler cihazınızdan da silinir.
+    </p>
+    <p>
+      Uygulama, konumunuzu yalnızca ekranda açıkken kullanır. Arka planda konum
+      takibi yapmaz.
+    </p>
+
+    <h2>2. Sıralamaya gönderilen bilgiler</h2>
+    <p>
+      Global sıralamaya katılmayı seçerseniz, kişisel rekorunuzu kırdığınızda
+      aşağıdaki bilgiler sunucumuza (Google Firebase Firestore) gönderilir:
+    </p>
+
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr><th>Veri</th><th>Neden</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Takma adınız</td><td>Sıralamada görünmesi için</td></tr>
+          <tr><td>Puanınız</td><td>Sıralamayı oluşturmak için</td></tr>
+          <tr><td>Koşu mesafesi ve süresi</td><td>Puanın tutarlılığını doğrulamak için</td></tr>
+          <tr><td>Zorluk seviyesi</td><td>Sıralamada göstermek için</td></tr>
+          <tr><td>Cihaz kimliği</td><td>Cihaz başına tek kayıt tutmak için</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="note">
+      Cihaz kimliği, uygulama ilk açıldığında üretilen rastgele bir dizedir.
+      Kimliğinizle, telefon numaranızla, Apple hesabınızla ya da reklam
+      kimliğinizle ilişkili değildir; başka hiçbir yerde kullanılmaz.
+      Mesafe ve süre konumunuzdan türetilir ancak nerede olduğunuzu göstermez —
+      yalnızca ne kadar hareket ettiğinizi belirtir.
+    </p>
+
+    <h3>Takma adınız herkese açıktır</h3>
+    <p>
+      Seçtiğiniz takma ad, uygulamanın diğer kullanıcılarının göreceği global
+      sıralamada yayımlanır. Bu nedenle gerçek adınızı, e-postanızı veya sizi
+      tanımlayabilecek başka bir bilgiyi takma ad olarak kullanmamanızı öneririz.
+    </p>
+
+    <h3>Sıralamaya katılmak zorunda değilsiniz</h3>
+    <p>
+      Ayarlar ekranından sıralamaya katılımı kapatabilirsiniz. Kapattığınızda
+      hiçbir veri gönderilmez ve varsa mevcut kaydınız sunucudan silinir. Oyunun
+      geri kalanı (puanlarınız, geçmişiniz, rotalarınız) cihazınızda çalışmaya
+      devam eder.
+    </p>
+
+    <h2>3. Cihazınızda kalan veriler</h2>
+    <p>Aşağıdakiler yalnızca telefonunuzda saklanır ve sunucuya gönderilmez:</p>
+    <ul>
+      <li>Koşu geçmişiniz ve GPS rotalarınız</li>
+      <li>Zombi görselleri olarak seçtiğiniz fotoğraflar (fotoğraf galerinize yalnızca sizin seçtiğiniz an erişilir; seçilen görsel kopyalanmaz, yalnızca referansı tutulur)</li>
+      <li>Ayarlarınız: dil, zorluk, ses, titreşim, harita tercihleri</li>
+      <li>Envanteriniz (buz ve bombalar)</li>
+    </ul>
+    <p>
+      Uygulamayı silmeniz bu verilerin tamamını cihazınızdan kaldırır.
+    </p>
+
+    <h2>4. Kullandığımız hizmetler</h2>
+    <p>
+      Sıralama için <strong>Google Firebase</strong> (Firestore ve Anonim
+      Kimlik Doğrulama) kullanıyoruz. Anonim kimlik doğrulama, sunucuya yalnızca
+      uygulamanın yazabilmesini sağlar; sizden bir hesap veya kişisel bilgi
+      istemez. Firebase, teknik gereklilik olarak bağlantı sırasında IP adresinizi
+      işleyebilir. Firebase’in kendi gizlilik uygulamaları için:
+      <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a>
+    </p>
+    <p>
+      Harita görüntüsü için cihazınızın kendi <strong>Apple Haritalar</strong>
+      bileşenini kullanıyoruz.
+    </p>
+    <p>
+      Uygulamada <strong>reklam ağı, analitik aracı veya izleme teknolojisi
+      bulunmaz.</strong> Verilerinizi kimseye satmıyor, pazarlama amacıyla
+      paylaşmıyoruz.
+    </p>
+
+    <h2>5. Veri saklama</h2>
+    <p>
+      Sıralama kaydınız, siz silene ya da sıralamaya katılımı kapatana kadar
+      saklanır. Cihazınızdaki veriler, siz silene ya da uygulamayı kaldırana
+      kadar cihazınızda kalır.
+    </p>
+
+    <h2>6. Haklarınız</h2>
+    <p>
+      6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) ve Avrupa Birliği
+      Genel Veri Koruma Tüzüğü (GDPR) kapsamında; verilerinize erişme, düzeltme,
+      silme ve işlenmesine itiraz etme haklarınız bulunur.
+    </p>
+    <p>
+      Uygulamadaki verilerinizin tamamı doğrudan sizin kontrolünüzdedir:
+      takma adınızı istediğiniz an değiştirebilir, sıralama kaydınızı Ayarlar’dan
+      silebilir, cihazınızdaki geçmişi Puanlar ekranından temizleyebilirsiniz.
+      Ek talepleriniz için bize yazabilirsiniz.
+    </p>
+
+    <h2>7. Çocukların gizliliği</h2>
+    <p>
+      Uygulama 13 yaşın altındaki çocuklara yönelik değildir ve bilerek onlardan
+      veri toplamayız. Çocuğunuzun bize veri gönderdiğini düşünüyorsanız, silmemiz
+      için bizimle iletişime geçin.
+    </p>
+
+    <h2>8. Güvenlik uyarısı</h2>
+    <p>
+      ZombieRun sizi gerçek dünyada hareket etmeye teşvik eder. Oynarken
+      çevrenize dikkat edin: trafiğe, yayalara ve zemine bakın, ekrana değil.
+      Karşıdan karşıya geçerken oyunu duraklatın. Oyunu güvenli olmayan
+      yerlerde, özel mülklerde veya girişin yasak olduğu alanlarda oynamayın.
+      Oynarken oluşabilecek yaralanma veya zararlardan sorumluluk kabul edilmez.
+    </p>
+
+    <h2>9. Değişiklikler</h2>
+    <p>
+      Bu politikayı zaman zaman güncelleyebiliriz. Önemli bir değişiklik olursa
+      bu sayfadaki “son güncelleme” tarihi değişir.
+    </p>
+
+    <h2>10. İletişim</h2>
+    <p>
+      Sorularınız için: <a href="mailto:ORNEK@EPOSTA.COM">ORNEK@EPOSTA.COM</a>
+    </p>
+  </section>
+
+  <!-- ============================ ENGLISH ============================ -->
+  <section data-lang="en">
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: 7 September 2026</p>
+
+    <div class="summary">
+      <h2>In short</h2>
+      <ul>
+        <li><strong>Your running route never leaves your phone.</strong> We can’t see where you go.</li>
+        <li>If you join the ranking, only your <strong>nickname and a run summary</strong> are sent.</li>
+        <li>You can <strong>opt out at any time</strong>; your entry is deleted.</li>
+        <li>No ads, no analytics, no tracking, no data sales.</li>
+        <li>No account needed. We don’t ask for your email, name or phone number.</li>
+      </ul>
+    </div>
+
+    <p>
+      ZombieRun (“the app”) is a GPS game you play by running in the real world.
+      This policy explains what data the app processes, what stays on your device
+      and what is sent to our server.
+    </p>
+
+    <h2>1. Your location</h2>
+    <p>
+      While you play, the app accesses your <strong>precise location</strong>.
+      The game cannot work without it: zombies spawn around you, chase you based
+      on where you are, and your distance and speed are calculated from it.
+    </p>
+    <p>
+      <strong>Your location data never leaves your device.</strong> The route
+      recorded during a run is stored only in your phone’s local storage and shown
+      only to you. We do not upload it to any server and do not share it with any
+      third party. Deleting the app removes this data from your device.
+    </p>
+    <p>
+      The app uses your location only while the screen is on. It does not track
+      your location in the background.
+    </p>
+
+    <h2>2. What is sent to the ranking</h2>
+    <p>
+      If you choose to join the global ranking, the following is sent to our
+      server (Google Firebase Firestore) when you beat your personal best:
+    </p>
+
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr><th>Data</th><th>Why</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Your nickname</td><td>To show you on the ranking</td></tr>
+          <tr><td>Your score</td><td>To build the ranking</td></tr>
+          <tr><td>Run distance and duration</td><td>To validate that the score is plausible</td></tr>
+          <tr><td>Difficulty level</td><td>To display alongside your entry</td></tr>
+          <tr><td>Device identifier</td><td>To keep one entry per device</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="note">
+      The device identifier is a random string generated the first time you open
+      the app. It is not linked to your identity, phone number, Apple account or
+      advertising identifier, and it is not used anywhere else. Distance and
+      duration are derived from your location but do not reveal where you were —
+      only how far you moved.
+    </p>
+
+    <h3>Your nickname is public</h3>
+    <p>
+      The nickname you choose is published on the global ranking, visible to other
+      users of the app. For that reason we recommend not using your real name,
+      your email address or anything else that could identify you.
+    </p>
+
+    <h3>Joining the ranking is optional</h3>
+    <p>
+      You can turn ranking participation off in Settings. When you do, nothing is
+      sent and your existing entry is deleted from the server. The rest of the game
+      — your scores, history and routes — keeps working on your device.
+    </p>
+
+    <h2>3. Data that stays on your device</h2>
+    <p>The following is stored only on your phone and never uploaded:</p>
+    <ul>
+      <li>Your run history and GPS routes</li>
+      <li>Photos you pick as zombie images (your photo library is accessed only at the moment you choose an image; the image is not copied, only referenced)</li>
+      <li>Your settings: language, difficulty, sound, haptics, map preferences</li>
+      <li>Your inventory (ice and bombs)</li>
+    </ul>
+    <p>Deleting the app removes all of this from your device.</p>
+
+    <h2>4. Services we use</h2>
+    <p>
+      We use <strong>Google Firebase</strong> (Firestore and Anonymous
+      Authentication) for the ranking. Anonymous authentication simply lets the app
+      write to the server; it does not ask you for an account or any personal
+      information. As a technical necessity, Firebase may process your IP address
+      when connecting. For Firebase’s own privacy practices see:
+      <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a>
+    </p>
+    <p>
+      Map rendering uses your device’s built-in <strong>Apple Maps</strong> component.
+    </p>
+    <p>
+      The app contains <strong>no ad networks, no analytics tools and no tracking
+      technologies.</strong> We do not sell your data or share it for marketing.
+    </p>
+
+    <h2>5. Data retention</h2>
+    <p>
+      Your ranking entry is kept until you delete it or opt out of the ranking.
+      Data on your device stays there until you delete it or remove the app.
+    </p>
+
+    <h2>6. Your rights</h2>
+    <p>
+      Under the EU General Data Protection Regulation (GDPR) and the Turkish
+      Personal Data Protection Law (KVKK No. 6698), you have the right to access,
+      correct, delete and object to the processing of your data.
+    </p>
+    <p>
+      All of your data in the app is under your direct control: you can change your
+      nickname at any time, delete your ranking entry from Settings, and clear your
+      device history from the Scores screen. For any further request, contact us.
+    </p>
+
+    <h2>7. Children’s privacy</h2>
+    <p>
+      The app is not directed at children under 13 and we do not knowingly collect
+      data from them. If you believe your child has sent us data, contact us and we
+      will delete it.
+    </p>
+
+    <h2>8. Safety notice</h2>
+    <p>
+      ZombieRun encourages you to move in the real world. Stay aware of your
+      surroundings while playing: watch traffic, people and the ground — not the
+      screen. Pause the game when crossing a street. Do not play in unsafe areas,
+      on private property or anywhere entry is prohibited. We accept no liability
+      for injury or damage arising from play.
+    </p>
+
+    <h2>9. Changes</h2>
+    <p>
+      We may update this policy from time to time. If something material changes,
+      the “last updated” date on this page will change.
+    </p>
+
+    <h2>10. Contact</h2>
+    <p>
+      Questions: <a href="mailto:burak23369@gmail.com">burak23369@gmail.com</a>
+    </p>
+  </section>
+
+  <footer>
+    <span data-lang="tr" class="active">ZombieRun · Bağımsız olarak geliştirilmiştir.</span>
+    <span data-lang="en">ZombieRun · Independently developed.</span>
+  </footer>
+</div>
+
+<script>
+  (function () {
+    var btnTr = document.getElementById("btn-tr");
+    var btnEn = document.getElementById("btn-en");
+
+    function setLang(lang) {
+      document.documentElement.lang = lang;
+      document.querySelectorAll("[data-lang]").forEach(function (el) {
+        el.classList.toggle("active", el.getAttribute("data-lang") === lang);
+      });
+      btnTr.setAttribute("aria-pressed", String(lang === "tr"));
+      btnEn.setAttribute("aria-pressed", String(lang === "en"));
+      try { localStorage.setItem("zr-policy-lang", lang); } catch (e) {}
+      // Derin bağlantı: ?lang=en ile doğrudan İngilizce açılabilsin
+      history.replaceState(null, "", lang === "en" ? "?lang=en" : location.pathname);
+    }
+
+    btnTr.addEventListener("click", function () { setLang("tr"); });
+    btnEn.addEventListener("click", function () { setLang("en"); });
+
+    // Öncelik: URL parametresi > kayıtlı tercih > cihaz dili
+    var params = new URLSearchParams(location.search);
+    var fromUrl = params.get("lang");
+    var saved = null;
+    try { saved = localStorage.getItem("zr-policy-lang"); } catch (e) {}
+    var device = (navigator.language || "tr").toLowerCase().startsWith("tr") ? "tr" : "en";
+    setLang(fromUrl === "en" || fromUrl === "tr" ? fromUrl : saved || device);
+  })();
+</script>
+</body>
+</html>
