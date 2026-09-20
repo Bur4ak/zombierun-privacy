@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>ZombieRun — Gizlilik Politikası / Privacy Policy</title>
+<title>Dead Chase — Gizlilik Politikası / Privacy Policy</title>
 <style>
   :root {
     --bg: #0a0c10;
@@ -88,7 +88,7 @@
   <header>
     <div class="brand">
       <span class="brand-mark">🧟</span>
-      <span class="brand-name">ZombieRun</span>
+      <span class="brand-name">Dead Chase</span>
     </div>
     <div class="langswitch" role="group" aria-label="Language">
       <button type="button" id="btn-tr" aria-pressed="true">Türkçe</button>
@@ -99,21 +99,22 @@
   <!-- ============================ TÜRKÇE ============================ -->
   <section data-lang="tr" class="active">
     <h1>Gizlilik Politikası</h1>
-    <p class="updated">Son güncelleme: 7 Eylül 2026</p>
+    <p class="updated">Son güncelleme: 20 Eylül 2026</p>
 
     <div class="summary">
       <h2>Kısaca</h2>
       <ul>
         <li><strong>Koşu rotanız telefonunuzdan çıkmaz.</strong> Nereden geçtiğinizi biz görmeyiz.</li>
-        <li>Sunucuya yalnızca sıralamaya katılırsanız, yalnızca <strong>takma adınız ve koşu özetiniz</strong> gider.</li>
-        <li>Sıralamaya katılmayı <strong>istediğiniz an kapatabilirsiniz</strong>; kaydınız silinir.</li>
+        <li>Sunucuya yalnızca sıralamaya katılırsanız ya da bir arkadaş grubuna girerseniz, yalnızca <strong>takma adınız ve koşu özetiniz</strong> gider.</li>
+        <li>Sıralamadan ve gruplardan <strong>istediğiniz an çıkabilirsiniz</strong>; kaydınız silinir.</li>
+        <li>Adım sayınız yalnızca cihazınızda karşılaştırılır, sunucuya gönderilmez.</li>
         <li>Reklam yok, analitik yok, takip yok, veri satışı yok.</li>
         <li>Hesap açmanız gerekmez. E-postanızı, adınızı, telefonunuzu istemiyoruz.</li>
       </ul>
     </div>
 
     <p>
-      ZombieRun (“uygulama”), gerçek dünyada koşarak oynadığınız bir GPS oyunudur.
+      Dead Chase (“uygulama”), gerçek dünyada koşarak oynadığınız bir GPS oyunudur.
       Bu politika, uygulamanın hangi verileri işlediğini, neyi cihazınızda
       tuttuğunu ve neyi sunucuya gönderdiğini açıklar.
     </p>
@@ -133,10 +134,24 @@
     </p>
     <p>
       Uygulama, konumunuzu yalnızca ekranda açıkken kullanır. Arka planda konum
-      takibi yapmaz.
+      takibi yapmaz; ekran kilitlenince koşu duraklar.
     </p>
 
-    <h2>2. Sıralamaya gönderilen bilgiler</h2>
+    <h2>2. Hareket ve Fitness (adım sayısı)</h2>
+    <p>
+      Uygulama, koşu sırasında telefonunuzun <strong>adımsayarından</strong> adım
+      sayısını okumak için izin ister. Tek amacı, kat edilen mesafenin gerçekten
+      koşarak yapıldığını doğrulamaktır: adım sayısı mesafeye göre çok düşükse
+      (örneğin bisiklet ya da araçla) koşu cihazınıza kaydedilir ama sıralamaya
+      ve gruplara gönderilmez.
+    </p>
+    <p>
+      <strong>Adım sayınız sunucuya gönderilmez</strong>; karşılaştırma yalnızca
+      cihazınızda yapılır. Sağlık uygulamanızdaki verilere erişmiyoruz. İzin
+      vermezseniz oyun aynen çalışır, yalnızca bu doğrulama yapılmaz.
+    </p>
+
+    <h2>3. Sıralamaya gönderilen bilgiler</h2>
     <p>
       Global sıralamaya katılmayı seçerseniz, kişisel rekorunuzu kırdığınızda
       aşağıdaki bilgiler sunucumuza (Google Firebase Firestore) gönderilir:
@@ -152,17 +167,18 @@
           <tr><td>Puanınız</td><td>Sıralamayı oluşturmak için</td></tr>
           <tr><td>Koşu mesafesi ve süresi</td><td>Puanın tutarlılığını doğrulamak için</td></tr>
           <tr><td>Zorluk seviyesi</td><td>Sıralamada göstermek için</td></tr>
-          <tr><td>Cihaz kimliği</td><td>Cihaz başına tek kayıt tutmak için</td></tr>
+          <tr><td>Öldürme, ısırık ve en yüksek hız</td><td>Oyuncu kartında koşu detayı olarak göstermek için</td></tr>
+          <tr><td>Anonim kimlik</td><td>Kişi başına tek kayıt tutmak için</td></tr>
         </tbody>
       </table>
     </div>
 
     <p class="note">
-      Cihaz kimliği, uygulama ilk açıldığında üretilen rastgele bir dizedir.
-      Kimliğinizle, telefon numaranızla, Apple hesabınızla ya da reklam
+      Anonim kimlik, uygulama ilk açıldığında Firebase tarafından üretilen rastgele
+      bir dizedir. Kimliğinizle, telefon numaranızla, Apple hesabınızla ya da reklam
       kimliğinizle ilişkili değildir; başka hiçbir yerde kullanılmaz.
-      Mesafe ve süre konumunuzdan türetilir ancak nerede olduğunuzu göstermez —
-      yalnızca ne kadar hareket ettiğinizi belirtir.
+      Mesafe, süre ve hız konumunuzdan türetilir ancak nerede olduğunuzu göstermez —
+      yalnızca ne kadar ve ne hızla hareket ettiğinizi belirtir.
     </p>
 
     <h3>Takma adınız herkese açıktır</h3>
@@ -180,23 +196,60 @@
       devam eder.
     </p>
 
-    <h2>3. Cihazınızda kalan veriler</h2>
+    <h2>4. Arkadaş grupları</h2>
+    <p>
+      Bir arkadaş grubu kurabilir ya da 6 haneli bir davet koduyla bir gruba
+      katılabilirsiniz. Gruba katılmak, <strong>o gruptaki kişilere</strong>
+      takma adınızı ve en iyi koşunuzun özetini (puan, mesafe, süre, zorluk,
+      öldürme, ısırık, en yüksek hız) göstermeyi kabul etmek demektir. Bu bilgiler
+      sunucuda grup kaydında tutulur ve yalnızca kodu bilen üyeler tarafından
+      görülebilir; global sıralama ayarından bağımsızdır. Rotanız ve konumunuz
+      grupla da paylaşılmaz.
+    </p>
+    <p>
+      Gruptan istediğiniz an ayrılabilirsiniz; ayrılınca satırınız silinir. Grubu
+      kuran kişi üyeleri çıkarabilir; çıkarılan üyenin anonim kimliği, aynı kodla
+      geri girmesini engellemek için grup kaydında tutulur. Bir yıl boyunca
+      güncellenmeyen üye satırları grup kurucusunun cihazı tarafından temizlenir.
+    </p>
+
+    <h2>5. Bildirme</h2>
+    <p>
+      Sıralamada uygunsuz bir takma ad ya da şüpheli bir puan gördüğünüzde o
+      oyuncuyu bildirebilirsiniz. Bildirim kaydında bildirilen oyuncunun anonim
+      kimliği ve adı, seçtiğiniz sebep ve sizin anonim kimliğiniz tutulur; yalnızca
+      inceleme amacıyla kullanılır, hiçbir kullanıcıya gösterilmez.
+    </p>
+
+    <h2>6. Paylaşım kartı ve profil fotoğrafı</h2>
+    <p>
+      Koşu sonunda bir paylaşım kartı oluşturabilirsiniz. Kart, profil fotoğrafınız
+      (seçtiyseniz) ve koşu özetinizle <strong>cihazınızda</strong> üretilir;
+      sunucuya gitmez. Kartı iOS paylaşım menüsünden nereye gönderdiğiniz tamamen
+      sizin seçiminizdir. Profil fotoğrafınız yalnızca telefonunuzda saklanır.
+    </p>
+
+    <h2>7. Cihazınızda kalan veriler</h2>
     <p>Aşağıdakiler yalnızca telefonunuzda saklanır ve sunucuya gönderilmez:</p>
     <ul>
       <li>Koşu geçmişiniz ve GPS rotalarınız</li>
-      <li>Zombi görselleri olarak seçtiğiniz fotoğraflar (fotoğraf galerinize yalnızca sizin seçtiğiniz an erişilir; seçilen görsel kopyalanmaz, yalnızca referansı tutulur)</li>
-      <li>Ayarlarınız: dil, zorluk, ses, titreşim, harita tercihleri</li>
-      <li>Envanteriniz (buz ve bombalar)</li>
+      <li>Adım sayınız</li>
+      <li>Profil fotoğrafınız ve zombi görseli olarak seçtiğiniz fotoğraflar (fotoğraf galerinize yalnızca sizin seçtiğiniz an erişilir; seçilen görsel uygulamanın kendi depolama alanına kopyalanır, galerinizden başka hiçbir şey okunmaz)</li>
+      <li>Ayarlarınız: dil, zorluk, ses, titreşim, harita, bildirim tercihleri</li>
+      <li>Envanteriniz, rozetleriniz, görev ilerlemeniz</li>
+      <li>Üyesi olduğunuz grupların bir kopyası (hızlı açılış için)</li>
     </ul>
     <p>
       Uygulamayı silmeniz bu verilerin tamamını cihazınızdan kaldırır.
+      Ayarlar’daki <strong>“Verilerimi sıfırla”</strong> ise hem cihazınızdaki oyuncu
+      verisini hem de sunucudaki sıralama ve grup kayıtlarınızı siler.
     </p>
 
-    <h2>4. Kullandığımız hizmetler</h2>
+    <h2>8. Kullandığımız hizmetler</h2>
     <p>
-      Sıralama için <strong>Google Firebase</strong> (Firestore ve Anonim
-      Kimlik Doğrulama) kullanıyoruz. Anonim kimlik doğrulama, sunucuya yalnızca
-      uygulamanın yazabilmesini sağlar; sizden bir hesap veya kişisel bilgi
+      Sıralama ve gruplar için <strong>Google Firebase</strong> (Firestore ve
+      Anonim Kimlik Doğrulama) kullanıyoruz. Anonim kimlik doğrulama, sunucuya
+      yalnızca uygulamanın yazabilmesini sağlar; sizden bir hesap veya kişisel bilgi
       istemez. Firebase, teknik gereklilik olarak bağlantı sırasında IP adresinizi
       işleyebilir. Firebase’in kendi gizlilik uygulamaları için:
       <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a>
@@ -206,19 +259,24 @@
       bileşenini kullanıyoruz.
     </p>
     <p>
+      Hatırlatma bildirimleri (isteğe bağlı) cihazınızda yerel olarak planlanır.
+      Bildirim metinleri sunucudan okunur; bu sırada size ait hiçbir veri gönderilmez.
+    </p>
+    <p>
       Uygulamada <strong>reklam ağı, analitik aracı veya izleme teknolojisi
       bulunmaz.</strong> Verilerinizi kimseye satmıyor, pazarlama amacıyla
       paylaşmıyoruz.
     </p>
 
-    <h2>5. Veri saklama</h2>
-    <p>
-      Sıralama kaydınız, siz silene ya da sıralamaya katılımı kapatana kadar
-      saklanır. Cihazınızdaki veriler, siz silene ya da uygulamayı kaldırana
-      kadar cihazınızda kalır.
-    </p>
+    <h2>9. Veri saklama</h2>
+    <ul>
+      <li><strong>Sıralama kaydınız:</strong> son rekorunuzdan itibaren bir yıl (her yeni rekor süreyi yeniler) ya da siz silene / sıralamadan çıkana kadar.</li>
+      <li><strong>Grup üyeliğiniz:</strong> siz ayrılana, kurucu sizi çıkarana ya da bir yıl hareketsiz kalana kadar.</li>
+      <li><strong>Bildirimler:</strong> inceleme tamamlanana kadar.</li>
+      <li><strong>Cihazınızdaki veriler:</strong> siz silene ya da uygulamayı kaldırana kadar.</li>
+    </ul>
 
-    <h2>6. Haklarınız</h2>
+    <h2>10. Haklarınız</h2>
     <p>
       6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) ve Avrupa Birliği
       Genel Veri Koruma Tüzüğü (GDPR) kapsamında; verilerinize erişme, düzeltme,
@@ -226,57 +284,58 @@
     </p>
     <p>
       Uygulamadaki verilerinizin tamamı doğrudan sizin kontrolünüzdedir:
-      takma adınızı istediğiniz an değiştirebilir, sıralama kaydınızı Ayarlar’dan
-      silebilir, cihazınızdaki geçmişi Puanlar ekranından temizleyebilirsiniz.
-      Ek talepleriniz için bize yazabilirsiniz.
+      takma adınızı istediğiniz an değiştirebilir, sıralama kaydınızı ve grup
+      üyeliklerinizi Ayarlar’dan silebilir, cihazınızdaki geçmişi Puanlar
+      ekranından temizleyebilirsiniz. Ek talepleriniz için bize yazabilirsiniz.
     </p>
 
-    <h2>7. Çocukların gizliliği</h2>
+    <h2>11. Çocukların gizliliği</h2>
     <p>
       Uygulama 13 yaşın altındaki çocuklara yönelik değildir ve bilerek onlardan
       veri toplamayız. Çocuğunuzun bize veri gönderdiğini düşünüyorsanız, silmemiz
       için bizimle iletişime geçin.
     </p>
 
-    <h2>8. Güvenlik uyarısı</h2>
+    <h2>12. Güvenlik uyarısı</h2>
     <p>
-      ZombieRun sizi gerçek dünyada hareket etmeye teşvik eder. Oynarken
+      Dead Chase sizi gerçek dünyada hareket etmeye teşvik eder. Oynarken
       çevrenize dikkat edin: trafiğe, yayalara ve zemine bakın, ekrana değil.
       Karşıdan karşıya geçerken oyunu duraklatın. Oyunu güvenli olmayan
       yerlerde, özel mülklerde veya girişin yasak olduğu alanlarda oynamayın.
       Oynarken oluşabilecek yaralanma veya zararlardan sorumluluk kabul edilmez.
     </p>
 
-    <h2>9. Değişiklikler</h2>
+    <h2>13. Değişiklikler</h2>
     <p>
       Bu politikayı zaman zaman güncelleyebiliriz. Önemli bir değişiklik olursa
       bu sayfadaki “son güncelleme” tarihi değişir.
     </p>
 
-    <h2>10. İletişim</h2>
+    <h2>14. İletişim</h2>
     <p>
-      Sorularınız için: <a href="mailto:ORNEK@EPOSTA.COM">ORNEK@EPOSTA.COM</a>
+      Sorularınız için: <a href="mailto:burak23369@gmail.com">burak23369@gmail.com</a>
     </p>
   </section>
 
   <!-- ============================ ENGLISH ============================ -->
   <section data-lang="en">
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: 7 September 2026</p>
+    <p class="updated">Last updated: 20 September 2026</p>
 
     <div class="summary">
       <h2>In short</h2>
       <ul>
         <li><strong>Your running route never leaves your phone.</strong> We can’t see where you go.</li>
-        <li>If you join the ranking, only your <strong>nickname and a run summary</strong> are sent.</li>
-        <li>You can <strong>opt out at any time</strong>; your entry is deleted.</li>
+        <li>Only if you join the ranking or a friend group, only your <strong>nickname and a run summary</strong> are sent.</li>
+        <li>You can <strong>leave the ranking and any group at any time</strong>; your entry is deleted.</li>
+        <li>Your step count is compared on your device only and never sent to the server.</li>
         <li>No ads, no analytics, no tracking, no data sales.</li>
         <li>No account needed. We don’t ask for your email, name or phone number.</li>
       </ul>
     </div>
 
     <p>
-      ZombieRun (“the app”) is a GPS game you play by running in the real world.
+      Dead Chase (“the app”) is a GPS game you play by running in the real world.
       This policy explains what data the app processes, what stays on your device
       and what is sent to our server.
     </p>
@@ -295,10 +354,25 @@
     </p>
     <p>
       The app uses your location only while the screen is on. It does not track
-      your location in the background.
+      your location in the background; the run pauses when the screen locks.
     </p>
 
-    <h2>2. What is sent to the ranking</h2>
+    <h2>2. Motion &amp; Fitness (step count)</h2>
+    <p>
+      During a run the app asks for permission to read the step count from your
+      phone’s <strong>pedometer</strong>. Its only purpose is to check that the
+      distance was actually covered on foot: if the step count is far too low for
+      the distance (for example on a bike or in a car), the run is still saved on
+      your device but is not sent to the ranking or to groups.
+    </p>
+    <p>
+      <strong>Your step count is never sent to the server</strong>; the comparison
+      happens on your device only. We do not access your Health app data. If you
+      decline the permission the game works exactly the same, only this check is
+      skipped.
+    </p>
+
+    <h2>3. What is sent to the ranking</h2>
     <p>
       If you choose to join the global ranking, the following is sent to our
       server (Google Firebase Firestore) when you beat your personal best:
@@ -314,17 +388,18 @@
           <tr><td>Your score</td><td>To build the ranking</td></tr>
           <tr><td>Run distance and duration</td><td>To validate that the score is plausible</td></tr>
           <tr><td>Difficulty level</td><td>To display alongside your entry</td></tr>
-          <tr><td>Device identifier</td><td>To keep one entry per device</td></tr>
+          <tr><td>Kills, bites and top speed</td><td>To show run details on your player card</td></tr>
+          <tr><td>Anonymous identifier</td><td>To keep one entry per person</td></tr>
         </tbody>
       </table>
     </div>
 
     <p class="note">
-      The device identifier is a random string generated the first time you open
-      the app. It is not linked to your identity, phone number, Apple account or
-      advertising identifier, and it is not used anywhere else. Distance and
-      duration are derived from your location but do not reveal where you were —
-      only how far you moved.
+      The anonymous identifier is a random string generated by Firebase the first
+      time you open the app. It is not linked to your identity, phone number, Apple
+      account or advertising identifier, and it is not used anywhere else.
+      Distance, duration and speed are derived from your location but do not
+      reveal where you were — only how far and how fast you moved.
     </p>
 
     <h3>Your nickname is public</h3>
@@ -341,40 +416,88 @@
       — your scores, history and routes — keeps working on your device.
     </p>
 
-    <h2>3. Data that stays on your device</h2>
+    <h2>4. Friend groups</h2>
+    <p>
+      You can create a friend group or join one with a 6-character invite code.
+      Joining a group means agreeing to show <strong>the people in that group</strong>
+      your nickname and a summary of your best run (score, distance, duration,
+      difficulty, kills, bites, top speed). This is stored in the group record on
+      the server and is visible only to members who know the code; it is
+      independent of the global ranking setting. Your route and location are never
+      shared with a group either.
+    </p>
+    <p>
+      You can leave a group at any time; your row is deleted when you leave. The
+      person who created the group can remove members; a removed member’s
+      anonymous identifier is kept in the group record so the same code can’t be
+      used to rejoin. Member rows not updated for one year are cleaned up by the
+      group owner’s device.
+    </p>
+
+    <h2>5. Reporting</h2>
+    <p>
+      If you see an inappropriate nickname or a suspicious score on the ranking,
+      you can report that player. A report stores the reported player’s anonymous
+      identifier and name, the reason you chose and your own anonymous identifier;
+      it is used only for review and is never shown to any user.
+    </p>
+
+    <h2>6. Share card and profile photo</h2>
+    <p>
+      After a run you can create a share card. The card is generated
+      <strong>on your device</strong> from your profile photo (if you set one) and
+      your run summary; it is not sent to the server. Where you send it from the
+      iOS share sheet is entirely your choice. Your profile photo is stored only
+      on your phone.
+    </p>
+
+    <h2>7. Data that stays on your device</h2>
     <p>The following is stored only on your phone and never uploaded:</p>
     <ul>
       <li>Your run history and GPS routes</li>
-      <li>Photos you pick as zombie images (your photo library is accessed only at the moment you choose an image; the image is not copied, only referenced)</li>
-      <li>Your settings: language, difficulty, sound, haptics, map preferences</li>
-      <li>Your inventory (ice and bombs)</li>
+      <li>Your step counts</li>
+      <li>Your profile photo and the photos you pick as zombie images (your photo library is accessed only at the moment you choose an image; the chosen image is copied into the app’s own storage, nothing else in your library is read)</li>
+      <li>Your settings: language, difficulty, sound, haptics, map and notification preferences</li>
+      <li>Your inventory, badges and quest progress</li>
+      <li>A copy of the groups you belong to (for fast loading)</li>
     </ul>
-    <p>Deleting the app removes all of this from your device.</p>
+    <p>
+      Deleting the app removes all of this from your device. <strong>“Reset my
+      data”</strong> in Settings deletes both your player data on the device and
+      your ranking and group records on the server.
+    </p>
 
-    <h2>4. Services we use</h2>
+    <h2>8. Services we use</h2>
     <p>
       We use <strong>Google Firebase</strong> (Firestore and Anonymous
-      Authentication) for the ranking. Anonymous authentication simply lets the app
-      write to the server; it does not ask you for an account or any personal
-      information. As a technical necessity, Firebase may process your IP address
-      when connecting. For Firebase’s own privacy practices see:
+      Authentication) for the ranking and groups. Anonymous authentication simply
+      lets the app write to the server; it does not ask you for an account or any
+      personal information. As a technical necessity, Firebase may process your IP
+      address when connecting. For Firebase’s own privacy practices see:
       <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a>
     </p>
     <p>
       Map rendering uses your device’s built-in <strong>Apple Maps</strong> component.
     </p>
     <p>
+      Reminder notifications (optional) are scheduled locally on your device. The
+      notification texts are read from the server; nothing about you is sent in
+      the process.
+    </p>
+    <p>
       The app contains <strong>no ad networks, no analytics tools and no tracking
       technologies.</strong> We do not sell your data or share it for marketing.
     </p>
 
-    <h2>5. Data retention</h2>
-    <p>
-      Your ranking entry is kept until you delete it or opt out of the ranking.
-      Data on your device stays there until you delete it or remove the app.
-    </p>
+    <h2>9. Data retention</h2>
+    <ul>
+      <li><strong>Your ranking entry:</strong> one year from your latest record (each new record renews it), or until you delete it / opt out.</li>
+      <li><strong>Your group membership:</strong> until you leave, the owner removes you, or one year of inactivity.</li>
+      <li><strong>Reports:</strong> until the review is complete.</li>
+      <li><strong>Data on your device:</strong> until you delete it or remove the app.</li>
+    </ul>
 
-    <h2>6. Your rights</h2>
+    <h2>10. Your rights</h2>
     <p>
       Under the EU General Data Protection Regulation (GDPR) and the Turkish
       Personal Data Protection Law (KVKK No. 6698), you have the right to access,
@@ -382,41 +505,42 @@
     </p>
     <p>
       All of your data in the app is under your direct control: you can change your
-      nickname at any time, delete your ranking entry from Settings, and clear your
-      device history from the Scores screen. For any further request, contact us.
+      nickname at any time, delete your ranking entry and group memberships from
+      Settings, and clear your device history from the Scores screen. For any
+      further request, contact us.
     </p>
 
-    <h2>7. Children’s privacy</h2>
+    <h2>11. Children’s privacy</h2>
     <p>
       The app is not directed at children under 13 and we do not knowingly collect
       data from them. If you believe your child has sent us data, contact us and we
       will delete it.
     </p>
 
-    <h2>8. Safety notice</h2>
+    <h2>12. Safety notice</h2>
     <p>
-      ZombieRun encourages you to move in the real world. Stay aware of your
+      Dead Chase encourages you to move in the real world. Stay aware of your
       surroundings while playing: watch traffic, people and the ground — not the
       screen. Pause the game when crossing a street. Do not play in unsafe areas,
       on private property or anywhere entry is prohibited. We accept no liability
       for injury or damage arising from play.
     </p>
 
-    <h2>9. Changes</h2>
+    <h2>13. Changes</h2>
     <p>
       We may update this policy from time to time. If something material changes,
       the “last updated” date on this page will change.
     </p>
 
-    <h2>10. Contact</h2>
+    <h2>14. Contact</h2>
     <p>
       Questions: <a href="mailto:burak23369@gmail.com">burak23369@gmail.com</a>
     </p>
   </section>
 
   <footer>
-    <span data-lang="tr" class="active">ZombieRun · Bağımsız olarak geliştirilmiştir.</span>
-    <span data-lang="en">ZombieRun · Independently developed.</span>
+    <span data-lang="tr" class="active">Dead Chase · Bağımsız olarak geliştirilmiştir.</span>
+    <span data-lang="en">Dead Chase · Independently developed.</span>
   </footer>
 </div>
 
