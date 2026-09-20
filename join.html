@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Dead Chase — Gruba Katıl / Join Group</title>
+<style>
+  :root { --bg:#0a0c10; --text:#e8ecf3; --muted:#97a1b2; --gold:#ffd24d; --line:rgba(255,255,255,0.12); --card:rgba(255,255,255,0.04); }
+  * { box-sizing:border-box; }
+  html,body { margin:0; padding:0; }
+  body { min-height:100vh; display:flex; align-items:center; justify-content:center;
+    background:linear-gradient(160deg,#161b2e 0%,var(--bg) 45%,#1a1024 100%); background-attachment:fixed;
+    color:var(--text); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; line-height:1.55; -webkit-font-smoothing:antialiased; }
+  .card { width:min(92vw,420px); background:var(--card); border:1px solid var(--line); border-radius:22px; padding:28px 24px; text-align:center; }
+  .mark { font-size:44px; margin-bottom:6px; }
+  h1 { font-size:22px; margin:0 0 4px; letter-spacing:-0.3px; }
+  .sub { color:var(--muted); font-size:15px; margin:0 0 22px; }
+  .code { font-size:34px; font-weight:800; letter-spacing:8px; background:rgba(0,0,0,0.35); border:1px solid var(--line); border-radius:14px; padding:14px 10px 14px 18px; margin:0 0 20px; user-select:all; }
+  .btn { display:block; width:100%; appearance:none; border:0; cursor:pointer; font:inherit; font-size:17px; font-weight:800; color:#241a00; background:var(--gold); border-radius:999px; padding:15px 18px; text-decoration:none; }
+  .hint { color:var(--muted); font-size:14px; margin:16px 0 0; }
+  .steps { text-align:left; color:var(--muted); font-size:14px; margin:14px 0 0; padding-left:20px; }
+  .steps li { margin:4px 0; }
+  .lang { margin-top:22px; font-size:13px; color:var(--muted); }
+  .lang button { appearance:none; border:0; background:transparent; color:var(--gold); font:inherit; font-size:13px; font-weight:700; cursor:pointer; padding:0 4px; }
+  [data-lang] { display:none; } [data-lang].active { display:block; }
+  .err { color:#ff8a8a; font-weight:700; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="mark">🧟</div>
+
+  <section data-lang="tr" class="active">
+    <h1>Arkadaş grubuna davet</h1>
+    <p class="sub">Dead Chase'te bir gruba davet edildin.</p>
+    <div class="code" id="code-tr">——</div>
+    <a class="btn" id="open-tr" href="#">Uygulamada Aç</a>
+    <p class="hint">Düğme uygulamayı açmazsa Dead Chase yüklü değil ya da eski sürüm. Kodu elle girebilirsin:</p>
+    <ol class="steps">
+      <li>Dead Chase'i aç</li>
+      <li>Sıralama → <strong>+ Grup</strong> → <strong>Koda Katıl</strong></li>
+      <li>Yukarıdaki kodu yaz</li>
+    </ol>
+  </section>
+
+  <section data-lang="en">
+    <h1>Friend group invite</h1>
+    <p class="sub">You've been invited to a group in Dead Chase.</p>
+    <div class="code" id="code-en">——</div>
+    <a class="btn" id="open-en" href="#">Open in App</a>
+    <p class="hint">If the button doesn't open the app, Dead Chase isn't installed or is outdated. Enter the code by hand:</p>
+    <ol class="steps">
+      <li>Open Dead Chase</li>
+      <li>Leaderboard → <strong>+ Group</strong> → <strong>Join with Code</strong></li>
+      <li>Type the code above</li>
+    </ol>
+  </section>
+
+  <div class="lang"><button id="btn-tr">Türkçe</button> · <button id="btn-en">English</button></div>
+</div>
+
+<script>
+  (function () {
+    var params = new URLSearchParams(location.search);
+    var raw = (params.get("code") || "").toUpperCase().replace(/[^A-Z0-9]/g, "")
+      .replace(/0/g, "O").replace(/1/g, "I").replace(/L/g, "I").slice(0, 6);
+    var valid = /^[A-HJ-KM-NP-Z2-9]{6}$/.test(raw);
+    var deep = "zombierun://join/" + raw;
+
+    ["tr", "en"].forEach(function (l) {
+      var codeEl = document.getElementById("code-" + l);
+      var btn = document.getElementById("open-" + l);
+      if (valid) {
+        codeEl.textContent = raw;
+        btn.href = deep;
+      } else {
+        codeEl.textContent = l === "tr" ? "Kod eksik" : "Missing code";
+        codeEl.classList.add("err");
+        btn.style.display = "none";
+      }
+    });
+
+    function setLang(lang) {
+      document.documentElement.lang = lang;
+      document.querySelectorAll("[data-lang]").forEach(function (el) {
+        el.classList.toggle("active", el.getAttribute("data-lang") === lang);
+      });
+    }
+    document.getElementById("btn-tr").addEventListener("click", function () { setLang("tr"); });
+    document.getElementById("btn-en").addEventListener("click", function () { setLang("en"); });
+    var device = (navigator.language || "tr").toLowerCase().indexOf("tr") === 0 ? "tr" : "en";
+    setLang(params.get("lang") === "en" ? "en" : params.get("lang") === "tr" ? "tr" : device);
+
+    // Uygulama yüklüyse kendiliğinden aç; değilse sayfa kalır, düğme ve kod elde
+    if (valid) { setTimeout(function () { location.href = deep; }, 400); }
+  })();
+</script>
+</body>
+</html>
