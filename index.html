@@ -5,19 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Dead Chase — Gizlilik Politikası / Privacy Policy</title>
 <style>
+  /* Uygulamayla aynı palet (theme.ts): zemin #000, vurgu #FD1843, mürekkep #FFF9FA */
   :root {
-    --bg: #0a0c10;
-    --bg2: #12161f;
-    --text: #e8ecf3;
-    --muted: #97a1b2;
-    --gold: #ffd24d;
-    --line: rgba(255,255,255,0.12);
-    --card: rgba(255,255,255,0.04);
+    --bg: #000000;
+    --text: #FFF9FA;
+    --muted: rgba(255,249,250,0.72);
+    --accent: #FD1843;
+    --on-accent: #FFF9FA;
+    --line: rgba(255,249,250,0.14);
+    --card: rgba(255,249,250,0.06);
+    --link: #7FD4FF;
   }
   * { box-sizing: border-box; }
   html, body { margin: 0; padding: 0; }
   body {
-    background: linear-gradient(160deg, #161b2e 0%, var(--bg) 45%, #1a1024 100%);
+    background: linear-gradient(160deg, #1e0308 0%, var(--bg) 45%, #0d0c0c 100%);
     background-attachment: fixed;
     color: var(--text);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -42,28 +44,28 @@
     transition: background .15s ease, color .15s ease;
   }
   .langswitch button:hover { color: var(--text); }
-  .langswitch button[aria-pressed="true"] { background: var(--gold); color: #241a00; }
+  .langswitch button[aria-pressed="true"] { background: var(--accent); color: var(--on-accent); }
 
   h1 { font-size: 30px; line-height: 1.25; margin: 0 0 6px; letter-spacing: -0.4px; }
   .updated { color: var(--muted); font-size: 14px; margin: 0 0 30px; }
 
   .summary {
     background: var(--card); border: 1px solid var(--line);
-    border-left: 3px solid var(--gold);
+    border-left: 3px solid var(--accent);
     border-radius: 14px; padding: 18px 20px; margin: 0 0 34px;
   }
   .summary h2 { margin: 0 0 10px; font-size: 16px; letter-spacing: 0.4px;
-                text-transform: uppercase; color: var(--gold); }
+                text-transform: uppercase; color: var(--accent); }
   .summary ul { margin: 0; padding-left: 20px; }
   .summary li { margin: 6px 0; }
 
   h2 { font-size: 20px; margin: 34px 0 10px; letter-spacing: -0.2px; }
-  h3 { font-size: 16px; margin: 22px 0 8px; color: var(--gold); }
+  h3 { font-size: 16px; margin: 22px 0 8px; color: var(--accent); }
   p { margin: 10px 0; }
   ul { padding-left: 22px; }
   li { margin: 5px 0; }
   strong { color: #fff; }
-  a { color: #7fd4ff; }
+  a { color: var(--link); }
 
   table { width: 100%; border-collapse: collapse; margin: 14px 0 6px;
           font-size: 15px; }
