@@ -66,7 +66,7 @@
     var raw = (params.get("code") || "").toUpperCase().replace(/[^A-Z0-9]/g, "")
       .replace(/0/g, "O").replace(/1/g, "I").replace(/L/g, "I").slice(0, 6);
     var valid = /^[A-HJ-KM-NP-Z2-9]{6}$/.test(raw);
-    var deep = "zombierun://join/" + raw;
+    var deep = "zombierun://leaderboard?code=" + raw;
 
     ["tr", "en"].forEach(function (l) {
       var codeEl = document.getElementById("code-" + l);
