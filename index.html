@@ -101,7 +101,7 @@
   <!-- ============================ TÜRKÇE ============================ -->
   <section data-lang="tr" class="active">
     <h1>Gizlilik Politikası</h1>
-    <p class="updated">Son güncelleme: 23 Eylül 2026</p>
+    <p class="updated">Son güncelleme: 26 Eylül 2026</p>
 
     <div class="summary">
       <h2>Kısaca</h2>
@@ -112,6 +112,7 @@
         <li>Adım sayınız yalnızca cihazınızda karşılaştırılır, sunucuya gönderilmez.</li>
         <li>Reklam yok, analitik yok, takip yok, veri satışı yok.</li>
         <li>Hesap açmanız gerekmez. E-postanızı, adınızı, telefonunuzu istemiyoruz.</li>
+        <li>İsteğe bağlı <strong>Dead Chase+</strong> aboneliği Apple üzerinden alınır; ödeme bilgileriniz bize hiç gelmez.</li>
       </ul>
     </div>
 
@@ -240,16 +241,17 @@
     <h2>7. Cihazınızda kalan veriler</h2>
     <p>Aşağıdakiler yalnızca telefonunuzda (ve açıksa kendi cihaz yedeğinizde) saklanır, sunucumuza gönderilmez:</p>
     <ul>
-      <li>Koşu geçmişiniz ve GPS rotalarınız</li>
+      <li>Koşu geçmişiniz, GPS rotalarınız ve koşu analiziniz (rota noktalarının zamanı, hızınız, zombilerle karşılaşma ve eşya alma yerleri)</li>
       <li>Adım sayınız</li>
       <li>Profil fotoğrafınız ve zombi görseli olarak seçtiğiniz fotoğraflar (fotoğraf galerinize yalnızca sizin seçtiğiniz an erişilir; seçilen görsel uygulamanın kendi depolama alanına kopyalanır, galerinizden başka hiçbir şey okunmaz)</li>
       <li>Ayarlarınız: dil, zorluk, ses, titreşim, harita, bildirim tercihleri</li>
       <li>Envanteriniz, rozetleriniz, görev ilerlemeniz</li>
       <li>Üyesi olduğunuz grupların bir kopyası (hızlı açılış için)</li>
+      <li>Ana ekran widget'ının gösterdiği rekor, seri ve son koşu özeti (telefonun içinde yalnızca widget ile paylaşılır)</li>
     </ul>
     <p>
       Uygulamayı silmeniz bu verilerin tamamını cihazınızdan kaldırır.
-      Ayarlar’daki <strong>“Verilerimi sıfırla”</strong> ise hem cihazınızdaki oyuncu
+      Ayarlar’daki <strong>“Verilerimi Sıfırla”</strong> ise hem cihazınızdaki oyuncu
       verisini hem de sunucudaki sıralama ve grup kayıtlarınızı siler.
     </p>
 
@@ -259,8 +261,20 @@
       Anonim Kimlik Doğrulama) kullanıyoruz. Anonim kimlik doğrulama, sunucuya
       yalnızca uygulamanın yazabilmesini sağlar; sizden bir hesap veya kişisel bilgi
       istemez. Firebase, teknik gereklilik olarak bağlantı sırasında IP adresinizi
-      işleyebilir. Firebase’in kendi gizlilik uygulamaları için:
+      işleyebilir. Sunucuyu kötüye kullanıma karşı korumak için Firebase App Check,
+      Apple'ın DeviceCheck hizmetiyle isteğin gerçek Dead Chase uygulamasından
+      geldiğini doğrular; bu doğrulama sizi tanımlayan bir bilgi içermez.
+      Firebase’in kendi gizlilik uygulamaları için:
       <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a>
+    </p>
+    <p>
+      <strong>Dead Chase+ aboneliği</strong> Apple üzerinden satın alınır; ödeme
+      bilgileriniz bize hiç gelmez. Aboneliğin durumunu doğrulamak için
+      <strong>RevenueCat</strong> hizmetini kullanıyoruz: RevenueCat'e yalnızca
+      uygulamanın anonim kimliği (yukarıdaki rastgele Firebase kimliği) ve Apple'ın
+      satın alma kayıtları (hangi abonelik, ne zaman, geçerli mi) gider. Adınız,
+      e-postanız, konumunuz ya da rotanız gitmez. RevenueCat'in gizlilik uygulamaları için:
+      <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">revenuecat.com/privacy</a>
     </p>
     <p>
       Harita görüntüsü için cihazınızın kendi <strong>Apple Haritalar</strong>
@@ -328,7 +342,7 @@
   <!-- ============================ ENGLISH ============================ -->
   <section data-lang="en">
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: 23 September 2026</p>
+    <p class="updated">Last updated: 26 September 2026</p>
 
     <div class="summary">
       <h2>In short</h2>
@@ -339,6 +353,7 @@
         <li>Your step count is compared on your device only and never sent to the server.</li>
         <li>No ads, no analytics, no tracking, no data sales.</li>
         <li>No account needed. We don’t ask for your email, name or phone number.</li>
+        <li>The optional <strong>Dead Chase+</strong> subscription is purchased through Apple; your payment details never reach us.</li>
       </ul>
     </div>
 
@@ -466,16 +481,17 @@
     <h2>7. Data that stays on your device</h2>
     <p>The following is stored only on your phone (and your own device backup, if enabled) and never sent to our server:</p>
     <ul>
-      <li>Your run history and GPS routes</li>
+      <li>Your run history, GPS routes and run analysis (timing of route points, your speed, where you met zombies and picked up items)</li>
       <li>Your step counts</li>
       <li>Your profile photo and the photos you pick as zombie images (your photo library is accessed only at the moment you choose an image; the chosen image is copied into the app’s own storage, nothing else in your library is read)</li>
       <li>Your settings: language, difficulty, sound, haptics, map and notification preferences</li>
       <li>Your inventory, badges and quest progress</li>
       <li>A copy of the groups you belong to (for fast loading)</li>
+      <li>The best score, streak and last-run summary shown by the home screen widget (shared only with the widget, inside your phone)</li>
     </ul>
     <p>
-      Deleting the app removes all of this from your device. <strong>“Reset my
-      data”</strong> in Settings deletes both your player data on the device and
+      Deleting the app removes all of this from your device. <strong>“Reset My
+      Data”</strong> in Settings deletes both your player data on the device and
       your ranking and group records on the server.
     </p>
 
@@ -485,8 +501,20 @@
       Authentication) for the ranking and groups. Anonymous authentication simply
       lets the app write to the server; it does not ask you for an account or any
       personal information. As a technical necessity, Firebase may process your IP
-      address when connecting. For Firebase’s own privacy practices see:
+      address when connecting. To protect the server from abuse, Firebase App Check
+      uses Apple’s DeviceCheck service to verify that requests come from the genuine
+      Dead Chase app; this check contains nothing that identifies you.
+      For Firebase’s own privacy practices see:
       <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a>
+    </p>
+    <p>
+      <strong>Dead Chase+ subscriptions</strong> are purchased through Apple; your
+      payment details never reach us. To verify your subscription we use
+      <strong>RevenueCat</strong>: it receives only the app's anonymous identifier
+      (the random Firebase identifier above) and Apple's purchase records (which
+      subscription, when, whether it is valid). Your name, email, location or route
+      are never sent. RevenueCat's privacy practices:
+      <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">revenuecat.com/privacy</a>
     </p>
     <p>
       Map rendering uses your device’s built-in <strong>Apple Maps</strong> component.
