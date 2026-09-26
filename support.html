@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Dead Chase — Destek / Support</title>
+<style>
+  /* Uygulamayla aynı palet (theme.ts): zemin #000, vurgu #FD1843, mürekkep #FFF9FA */
+  :root {
+    --bg: #000000;
+    --text: #FFF9FA;
+    --muted: rgba(255,249,250,0.72);
+    --accent: #FD1843;
+    --on-accent: #FFF9FA;
+    --line: rgba(255,249,250,0.14);
+    --card: rgba(255,249,250,0.06);
+    --link: #7FD4FF;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: linear-gradient(160deg, #1e0308 0%, var(--bg) 45%, #0d0c0c 100%);
+    background-attachment: fixed;
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 40px 22px 80px; }
+
+  header { display: flex; align-items: center; justify-content: space-between;
+           gap: 16px; flex-wrap: wrap; margin-bottom: 28px; }
+  .brand { display: flex; align-items: center; gap: 10px; }
+  .brand-mark { font-size: 30px; }
+  .brand-name { font-size: 20px; font-weight: 800; letter-spacing: -0.2px; }
+
+  .langswitch { display: flex; gap: 6px; background: var(--card);
+                border: 1px solid var(--line); border-radius: 999px; padding: 4px; }
+  .langswitch button {
+    appearance: none; border: 0; cursor: pointer; font: inherit;
+    font-size: 14px; font-weight: 700; color: var(--muted);
+    background: transparent; border-radius: 999px; padding: 7px 16px;
+    transition: background .15s ease, color .15s ease;
+  }
+  .langswitch button:hover { color: var(--text); }
+  .langswitch button[aria-pressed="true"] { background: var(--accent); color: var(--on-accent); }
+
+  h1 { font-size: 30px; line-height: 1.25; margin: 0 0 6px; letter-spacing: -0.4px; }
+  .updated { color: var(--muted); font-size: 14px; margin: 0 0 30px; }
+
+  .summary {
+    background: var(--card); border: 1px solid var(--line);
+    border-left: 3px solid var(--accent);
+    border-radius: 14px; padding: 18px 20px; margin: 0 0 34px;
+  }
+  .summary h2 { margin: 0 0 10px; font-size: 16px; letter-spacing: 0.4px;
+                text-transform: uppercase; color: var(--accent); }
+  .summary ul { margin: 0; padding-left: 20px; }
+  .summary li { margin: 6px 0; }
+
+  h2 { font-size: 20px; margin: 34px 0 10px; letter-spacing: -0.2px; }
+  h3 { font-size: 16px; margin: 22px 0 8px; color: var(--accent); }
+  p { margin: 10px 0; }
+  ul { padding-left: 22px; }
+  li { margin: 5px 0; }
+  strong { color: #fff; }
+  a { color: var(--link); }
+
+  table { width: 100%; border-collapse: collapse; margin: 14px 0 6px;
+          font-size: 15px; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line);
+           vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; font-size: 13px;
+       text-transform: uppercase; letter-spacing: 0.4px; }
+  .tablewrap { overflow-x: auto; border: 1px solid var(--line);
+               border-radius: 14px; background: var(--card); }
+
+  .note { color: var(--muted); font-size: 14px; }
+  footer { margin-top: 46px; padding-top: 20px; border-top: 1px solid var(--line);
+           color: var(--muted); font-size: 14px; }
+
+  [data-lang] { display: none; }
+  [data-lang].active { display: block; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="brand">
+      <span class="brand-mark">🧟</span>
+      <span class="brand-name">Dead Chase</span>
+    </div>
+    <div class="langswitch" role="group" aria-label="Language">
+      <button type="button" id="btn-tr" aria-pressed="true">Türkçe</button>
+      <button type="button" id="btn-en" aria-pressed="false">English</button>
+    </div>
+  </header>
+
+  <!-- ============================ TÜRKÇE ============================ -->
+  <section data-lang="tr" class="active">
+    <h1>Destek</h1>
+    <p class="updated">Bir sorun mu var, bir öneri mi? Yaz, cevaplayalım.</p>
+
+    <div class="summary">
+      <h2>İletişim</h2>
+      <ul>
+        <li>E-posta: <a href="mailto:burak23369@gmail.com">burak23369@gmail.com</a></li>
+        <li>Yazarken telefon modelini, iOS sürümünü ve sorunu kısaca anlatırsan daha hızlı yardımcı olabiliriz.</li>
+      </ul>
+    </div>
+
+    <h2>Dead Chase+ aboneliğimi nasıl iptal ederim?</h2>
+    <p>
+      Uygulamada <strong>Ayarlar → Dead Chase+ → Aboneliği yönet</strong>'e dokun
+      ya da iPhone'unda <strong>Ayarlar → adın → Abonelikler → Dead Chase</strong>
+      yolunu izle. İptal ettiğinde abonelik, ödediğin dönemin sonuna kadar açık kalır.
+    </p>
+
+    <h2>Yeni telefona geçtim, aboneliğim görünmüyor</h2>
+    <p>
+      Aynı Apple Kimliğiyle giriş yaptığından emin ol, sonra uygulamada Dead Chase+
+      sayfasını açıp <strong>Satın alımları geri yükle</strong>'ye dokun. Abonelik
+      Apple Kimliğine bağlıdır; hesap açmana gerek yoktur.
+    </p>
+
+    <h2>İade istiyorum</h2>
+    <p>
+      Ödemeleri Apple alır, iadeleri de Apple yönetir:
+      <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a>
+    </p>
+
+    <h2>Oyun konum izni olmadan çalışmıyor</h2>
+    <p>
+      Zombiler gerçek konumuna göre seni kovaladığı için konum şart. iPhone'unda
+      <strong>Ayarlar → Gizlilik ve Güvenlik → Konum Servisleri → Dead Chase</strong>
+      bölümünden "Uygulamayı Kullanırken" ve "Hassas Konum"u aç. Konumun bize hiç
+      gelmez; rotan yalnızca telefonunda kalır.
+    </p>
+
+    <h2>Sıralamadan çıkmak ya da verilerimi silmek istiyorum</h2>
+    <p>
+      <strong>Ayarlar</strong>'dan sıralama katılımını kapatabilir (kaydın sunucudan
+      silinir) ya da <strong>Verilerimi Sıfırla</strong> ile hem telefondaki hem
+      sunucudaki verilerini silebilirsin.
+    </p>
+
+    <h2>Güvenlik</h2>
+    <p>
+      Oynarken gözün yolda olsun, ekranda değil. Karşıdan karşıya geçerken oyunu
+      duraklat; güvenli olmayan yerlerde ya da özel mülklerde oynama.
+    </p>
+
+    <p class="note">
+      <a href="./">Gizlilik Politikası</a> ·
+      <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener">Kullanım Koşulları</a>
+    </p>
+  </section>
+
+  <!-- ============================ ENGLISH ============================ -->
+  <section data-lang="en">
+    <h1>Support</h1>
+    <p class="updated">Found a problem or have an idea? Write to us and we’ll get back to you.</p>
+
+    <div class="summary">
+      <h2>Contact</h2>
+      <ul>
+        <li>Email: <a href="mailto:burak23369@gmail.com">burak23369@gmail.com</a></li>
+        <li>Including your phone model, iOS version and a short description of the issue helps us help you faster.</li>
+      </ul>
+    </div>
+
+    <h2>How do I cancel my Dead Chase+ subscription?</h2>
+    <p>
+      In the app, tap <strong>Settings → Dead Chase+ → Manage subscription</strong>,
+      or on your iPhone go to <strong>Settings → your name → Subscriptions → Dead
+      Chase</strong>. After cancelling, the subscription stays active until the end
+      of the period you paid for.
+    </p>
+
+    <h2>I switched phones and my subscription isn’t showing</h2>
+    <p>
+      Make sure you’re signed in with the same Apple ID, then open the Dead Chase+
+      page in the app and tap <strong>Restore purchases</strong>. The subscription
+      belongs to your Apple ID; no account is needed.
+    </p>
+
+    <h2>I’d like a refund</h2>
+    <p>
+      Payments are handled by Apple, and so are refunds:
+      <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a>
+    </p>
+
+    <h2>The game doesn’t work without location access</h2>
+    <p>
+      Zombies chase you based on your real location, so location is required. On
+      your iPhone go to <strong>Settings → Privacy &amp; Security → Location Services →
+      Dead Chase</strong> and choose “While Using the App” with “Precise Location” on.
+      Your location never reaches us; your route stays on your phone.
+    </p>
+
+    <h2>I want to leave the ranking or delete my data</h2>
+    <p>
+      In <strong>Settings</strong> you can turn off ranking participation (your entry
+      is deleted from the server) or use <strong>Reset My Data</strong> to delete your
+      data both on the phone and on the server.
+    </p>
+
+    <h2>Safety</h2>
+    <p>
+      Keep your eyes on the road, not the screen. Pause the game when crossing a
+      street, and don’t play in unsafe areas or on private property.
+    </p>
+
+    <p class="note">
+      <a href="./?lang=en">Privacy Policy</a> ·
+      <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener">Terms of Use</a>
+    </p>
+  </section>
+
+  <footer>
+    <span data-lang="tr" class="active">Dead Chase · Bağımsız olarak geliştirilmiştir.</span>
+    <span data-lang="en">Dead Chase · Independently developed.</span>
+  </footer>
+</div>
+
+<script>
+  (function () {
+    var btnTr = document.getElementById("btn-tr");
+    var btnEn = document.getElementById("btn-en");
+
+    function setLang(lang) {
+      document.documentElement.lang = lang;
+      document.querySelectorAll("[data-lang]").forEach(function (el) {
+        el.classList.toggle("active", el.getAttribute("data-lang") === lang);
+      });
+      btnTr.setAttribute("aria-pressed", String(lang === "tr"));
+      btnEn.setAttribute("aria-pressed", String(lang === "en"));
+      try { localStorage.setItem("zr-support-lang", lang); } catch (e) {}
+      // Derin bağlantı: ?lang=en ile doğrudan İngilizce açılabilsin
+      history.replaceState(null, "", lang === "en" ? "?lang=en" : location.pathname);
+    }
+
+    btnTr.addEventListener("click", function () { setLang("tr"); });
+    btnEn.addEventListener("click", function () { setLang("en"); });
+
+    // Öncelik: URL parametresi > kayıtlı tercih > cihaz dili
+    var params = new URLSearchParams(location.search);
+    var fromUrl = params.get("lang");
+    var saved = null;
+    try { saved = localStorage.getItem("zr-support-lang"); } catch (e) {}
+    var device = (navigator.language || "tr").toLowerCase().startsWith("tr") ? "tr" : "en";
+    setLang(fromUrl === "en" || fromUrl === "tr" ? fromUrl : saved || device);
+  })();
+</script>
+</body>
+</html>
